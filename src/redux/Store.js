@@ -1,5 +1,6 @@
 import { legacy_createStore } from "redux";
-import CakeReducer from "./cake/CakeReducer";
+import { rootReducer } from "./rootReducer";
 
-const Store=legacy_createStore(CakeReducer)
+
+const Store=legacy_createStore(rootReducer)
 export default Store
