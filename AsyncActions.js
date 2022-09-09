@@ -21,14 +21,14 @@ const fetchUserRequest=()=>{
     }
 }
 
-const fetchUserSuccess=()=>{
+const fetchUserSuccess=(users)=>{
     return{
         type:FETCH_USER_SUCCESS,
         payload:users
     }
 }
 
-const fetchUserFailure=()=>{
+const fetchUserFailure=(error)=>{
     return{
         type:FETCH_USER_FAILURE,
         payload:error
